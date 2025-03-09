@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_lesson.css">
+    <link rel="stylesheet" href="popup.css">
+    <title>Maquette leçon</title>
+</head>
+<body>
+
+    <div id="maPopup" class="popup">
+        <div class="contenu-popup">
+          <span class="fermer">&times;</span>
+          <p>Vous pouvez acheter jusqu'à 3 vies. <br>Vos vies se rechargent à chaque fin de leçon.</p>
+          <p>Recharger jusqu'à</p>
+          <button id="r1" onclick="add1()">1</button><button id="r2" onclick="add2()">2</button><button id="r3" onclick="add3()">3</button><p>vies</p>
+          </div>
+      </div>
+
+
+    <header>
+        <h1>Switch2deb_curriculum</h1>
+        <button class="br_ur_o_stylesheet">Bring your own stylesheet</button>
+    </header>
+
+    <label for="progressbar">0/5</label>
+    <progress id="progressbar" max="5" value="0"></progress>
+    <!--<button onclick="increase()">Increase</button> increase button -->
+    <div id="life_pannel">
+        <p class="inline_bro" id="1">&#x2665;</p><p class="inline_bro" id="2">&#x2665;</p><p class="inline_bro" id="3">&#x2665;</p><button class="life_button" id="ouvrirPopup">More lives</button>
+    </div>
+
+    <div class="exo">
+        <label for="answer">Write "<span id="solution">ok my bro</span>" :</label>
+        <br>
+        <textarea name="answer" id="answer"></textarea>
+    </div> 
+    <button onclick="submit()" id="remove_button">Submit</button>
+
+
+    <script src="script_lesson.js"></script>
+
+</body>
+</html> 
